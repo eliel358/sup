@@ -1,0 +1,21 @@
+{
+  "name": "biblioteca-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "electron": "^28.2.3",
+    "google-auth-library": "^9.6.3",
+    "google-spreadsheet": "^4.1.1",
+    "mysql": "^2.18.1"
+  }
+}
