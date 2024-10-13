@@ -21,12 +21,15 @@ con.connect(function(err) {
     // console.log("")
 // } 
 
-storeName = document.getElementById("storeName").value
-storeRate = document.getElementById("storeRate").value
-storeAddress = document.getElementById("storeAddress").value
 
 addStore = () =>{
-    console.log(con.query('insert into supermercado  (id,nome,avaliacao,endereco) values (default,'+'"'+storeName+'","'+storeRate+'","'+storeAddress+'"'+')'))
+    storeName = document.getElementById("storeName").value
+	storeRate = document.getElementById("storeRate").value
+	storeAddress = document.getElementById("storeAddress").value
+
+	console.log(con.query('insert into supermercado  (id,nome,avaliacao,endereco) values (default,"'+storeName+'",'+storeRate+',"'+storeAddress+'"'+')').sql)
+
+
 };
 document.getElementById('addStoreButton').addEventListener('click',()=>{
     addStore()

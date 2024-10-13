@@ -13,6 +13,7 @@
 }
 html,body{
     height: 100%;
+
 }
 p,input{
     font-size: 2em;
@@ -63,4 +64,23 @@ button:active{
 tr,table,td{
     border: 1px solid black;
     background-color: white;
+}
+li{
+	background-color: white;
+	margin: 1em 0em;
+	padding: 10px;
+	font-size: 1.5em;
+}
+.removeButton{
+		width:fit-content;
+		font-size:1em;
+}
+.removeConteiner{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	gap:1em;
+}
+.red{
+	background-color:red;
 }
